@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Fast Food Delivery</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+ 
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <section class="flex">
+
+      <a href="#home" class="logo"><span>F</span>AST <span>F</span>OOD <span>D</span>elivery.<span>.</span>.</a>
+
+      <nav class="navbar">
+         <a href="#home">Home</a>
+         <a href="#about">About</a>
+         <a href="#menu">Menu</a>
+         <a href="#order">Order</a>
+         <a href="#faq">Faq</a>
+      </nav>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="order-btn" class="fas fa-box"></div>
+         <div id="cart-btn" class="fas fa-shopping-cart"><span>(4)</span></div>
+      </div>
+
+   </section>
+
+</header>
+
+<!-- header section ends -->
+
+<div class="user-account">
+
+   <section>
+
+      <div id="close-account"><span>close</span></div>
+
+      <div class="user">
+         <p><span>you are not logged in now!</span></p>
+      </div>
+
+      <div class="display-orders">
+         <p>Black Burger <span>( Rs1000/- x 2 )</span></p>
+         <p>Homemade Pepperoni Pizza <span>( Rs1500/- x 1 )</span></p>
+         <p>Donut <span>( Rs150/- x 4 )</span></p>
+         <p>Air Fride chicken wings <span>( Rs2000/- x 1 )</span></p>
+      </div>
+
+      <div class="flex">
+
+         <form action="" method="post">
+            <h3>login now</h3>
+            <input type="email" name="email" required class="box" placeholder="enter your email" maxlength="50">
+            <input type="password" name="pass" required class="box" placeholder="enter your password" maxlength="20">
+            <input type="submit" value="login now" name="login" class="btn">
+         </form>
+
+         <form action="" method="post">
+            <h3>register now</h3>
+            <input type="text" name="name" required class="box" placeholder="enter your name" maxlength="20">
+            <input type="email" name="email" required class="box" placeholder="enter your email" maxlength="50">
+            <input type="password" name="pass" required class="box" placeholder="enter your password" maxlength="20">
+            <input type="password" name="cpass" required class="box" placeholder="confirm your password" maxlength="20">
+            <input type="submit" value="register now" name="register" class="btn">
+         </form>
+
+      </div>
+
+   </section>
+
+</div>
+
+<div class="my-orders">
+
+   <section>
+
+      <div id="close-orders"><span>close</span></div>
+
+      <h3 class="title"> my orders </h3>
+
+      <div class="box">
+         <p>placed on : <span>06/04/2023</span> </p>
+         <p>name : <span>Kusal Perera</span> </p>
+         <p>Phone number : <span>0750292309</span></p>
+         <p>address : <span>flat no. 123, bulding no. 2, Mihinthale, Sri Lanka - 400104</span></p>
+         <p>payment method : <span>cash on delivery</span></p>
+         <p>your orders : <span>Black Burger Rs1000/- x 2, Homemade Pepperoni Pizza Rs1500/- x 1, Donut Rs150/- x 4, Air Fride chicken wings, Rs2000/- x 1</span></p>
+         <p>total price : <span>Rs6100/-</span></p>
+         <p>payment status : <span style="color: var(--red);">pending</span> </p>
+      </div>
+
+   </section>
+
+</div>
+
+<div class="shopping-cart">
+
+   <section>
+
+      <div id="close-cart"><span>close</span></div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/F1.jpg" alt="">
+         <div class="content">
+            <p>Black Burger <span>( Rs1000/- x 2 )</span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/F3.png" alt="">
+         <div class="content">
+            <p>Pepperoni Pizza <span>( Rs1500/- x 1 )</span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/F6.jpg" alt="">
+         <div class="content">
+            <p>Donut <span>( Rs150/- x 4 )</span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="4" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/F7.jpg" alt="">
+         <div class="content">
+            <p> <span>Air Fride chicken wings( Rs2000/- x 1 )</span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <a href="#order" class="btn">order now</a>
+
+   </section>
+
+</div>
+
+<div class="home-bg">
+
+   <section class="home" id="home">
+
+      <div class="slide-container">
+
+         <div class="slide active">
+            <div class="image">
+               <img src="images/F10.jpg" alt="">
+            </div>
+            <div class="content">
+               <h3>Chicken Kabab</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>
+
+         <div class="slide">
+            <div class="image">
+               <img src="images/F3.png" alt="">
+            </div>
+            <div class="content">
+               <h3>Pepperoni Pizza</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>
+
+         <div class="slide">
+            <div class="image">
+               <img src="images/F5.jpg" alt="">
+            </div>
+            <div class="content">
+               <h3>Hotdog</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>
+
+      </div>
+
+   </section>
+
+</div>
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+   <h1 class="heading">about us</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/about1.jpg" alt="">
+         <h3>Made with safe and healthy</h3>
+         <p>Savor the goodness of safe and healthy food! Discover an online fast food delivery shop that prioritizes your well-being with wholesome and nourishing meal options</p>
+         <a href="#menu" class="btn">our menu</a>
+      </div>
+
+      <div class="box">
+         <img src="images/about2.jpg" alt="">
+		   <h3>Delivery Only first 10Km</h3>
+         <p>Convenience at your doorstep! Experience the swift and efficient service of an online fast food delivery shop, delivering mouthwatering meals straight to your location within a 10km radius.</p>
+         <a href="#menu" class="btn">our menu</a>
+      </div>
+
+      <div class="box">
+         <img src="images/about3.jpg" alt="">
+         <h3>share with freinds</h3>
+         <p>Delicious moments are meant to be shared! With an online fast food delivery shop, you can easily share scrumptious meals with friends, making every gathering a delightful and memorable experience.</p>
+         <a href="#menu" class="btn">our menu</a>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- menu section starts  -->
+
+<section id="menu" class="menu">
+
+   <h1 class="heading">our menu</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="price">Rs<span>1000</span>/-</div>
+         <img src="images/F1.jpg" alt="">
+         <div class="name">Black Burger</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Rs<span>950</span>/-</div>
+         <img src="images/F2.jpg" alt="">
+         <div class="name">Burger</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Rs<span>1500</span>/-</div>
+         <img src="images/F3.png" alt="">
+         <div class="name">Homemade Pepperoni Pizza</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Rs<span>350</span>/-</div>
+         <img src="images/F4.jpg" alt="">
+         <div class="name">Taco</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Rs<span>250</span>/-</div>
+         <img src="images/F5.jpg" alt="">
+         <div class="name">Hotdog</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Rs<span>150</span>/-</div>
+         <img src="images/F6.jpg" alt="">
+         <div class="name">Donut</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Rs<span>2000</span>/-</div>
+         <img src="images/F7.jpg" alt="">
+         <div class="name">Air Fride chicken wings</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Rs<span>200</span>/-</div>
+         <img src="images/F8.jpg" alt="">
+         <div class="name">Clube sandwich</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Rs<span>1800</span>/-</div>
+         <img src="images/home-img-3.png" alt="">
+         <div class="name">Mascarpone And Mushrooms</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- menu section ends -->
+
+<!-- order section starts  -->
+
+<section class="order" id="order">
+
+   <h1 class="heading">order now</h1>
+
+   <form action="" method="post">
+
+      <div class="display-orders">
+         <p>Black Burger <span>( Rs1000/- x 2 )</span></p>
+         <p>Homemade Pepperoni Pizza  <span>( Rs1500/- x 1 )</span></p>
+         <p>Donut <span>( Rs150/- x 4 )</span></p>
+         <p>Air Fride chicken wings <span>( Rs2000/- x 1 )</span></p>
+      </div>
+
+      <div class="flex">
+         <div class="inputBox">
+            <span>your name :</span>
+            <input type="text" name="name" class="box" required placeholder="enter your name" maxlength="20">
+         </div>
+         <div class="inputBox">
+            <span>your phone number :</span>
+            <input type="number" name="number" class="box" required placeholder="enter your phone number" min="0">
+         </div>
+         <div class="inputBox">
+            <span>payment method</span>
+            <select name="method" class="box">
+               <option value="cash on delivery">cash on delivery</option>
+            </select>
+         </div>
+         <div class="inputBox">
+            <span>address line 01 :</span>
+            <input type="text" name="flat" class="box" required placeholder="e.g. flat no." maxlength="50">
+         </div>
+         <div class="inputBox">
+            <span>address line 02 :</span>
+            <input type="text" name="street" class="box" required placeholder="e.g. street name." maxlength="50">
+         </div>
+         <div class="inputBox">
+            <span>postel code :</span>
+            <input type="number" name="pin_code" class="box" required placeholder="e.g. 123456" min="0">
+         </div>
+      </div>
+
+      <input type="submit" value="order now" class="btn" name="order">
+
+   </form>
+
+</section>
+
+<!-- order section ends -->
+
+<!-- faq section starts  -->
+
+<section class="faq" id="faq">
+
+   <h1 class="heading">FAQ</h1>
+
+   <div class="accordion-container">
+
+      <div class="accordion active">
+         <div class="accordion-heading">
+            <span>how does it work?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Welcome to our fast food delivery website! It's simple: browse the menu, customize your order, check out securely, and enjoy swift doorstep delivery—satisfying cravings made effortless
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>how long does it take for delivery?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Experience the convenience of our fast food delivery online website. With our efficient service and dedicated staff, expect your favorite meals delivered fresh and hot to your doorstep promptly. Satisfaction guaranteed!
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>can I order for huge parties?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            An online food shop revolutionizes the way we access and enjoy culinary delights. Through a user-friendly website or app, customers browse a vast menu, select desired items, and make secure payments. The shop then processes orders, coordinates delivery or pickup, and ensures fresh, delicious meals conveniently reach customers' doorsteps or designated locations.
+          </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>how much protein it contains?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Online food shops offer speedy and convenient delivery services to satisfy customers' cravings. Upon placing an order through a user-friendly website or app, the shop swiftly processes it. Delivery times vary based on factors like distance, preparation time, and traffic conditions, ensuring customers can enjoy their delicious meals in a timely manner.
+         </p>
+      </div>
+
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>is it cooked with oil?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Looking to fuel your body with protein-packed meals? Online food shops offer a variety of menu options that provide ample protein to support your fitness goals or dietary preferences. From protein-rich meats and plant-based alternatives to customized meal plans, these shops ensure you can conveniently meet your protein needs with every bite.
+         </p>
+      </div>
+
+   </div>
+   
+   <!--MAP-->
+		<div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6339.028911847116!2d80.50179729189601!3d8.3552659695062!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afc8a6fe65383cd%3A0xec7700cd1e49c64d!2sMihintale%20Junction!5e0!3m2!1sen!2slk!4v1689519758830!5m2!1sen!2slk" width="1200" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			
+        </div>
+	<!--MAP end-->
+
+   <!-- our staff start  -->
+
+<section class="about" id="about">
+
+   <h1 class="heading">our Chef</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/c1.jpg" alt="">
+         <h3>Mr.Kumara</h3>
+        
+      </div>
+
+      <div class="box">
+         <img src="images/c3.jpg" alt="">
+		   <h3>Mrs.Roshel</h3>
+         
+      </div>
+
+      <div class="box">
+         <img src="images/c2.jpg" alt="">
+         <h3>Mr.Perera</h3>
+        
+      </div>
+
+   </div>
+
+</section>
+
+
+<section class="about" id="about">
+
+   <h1 class="heading">our rider team</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/R1.jpg" alt="">
+         <h3>Mr.Tharaka</h3>
+        
+      </div>
+
+      <div class="box">
+         <img src="images/R2.jpg" alt="">
+		   <h3>Mr.Kavisha</h3>
+         
+      </div>
+
+      <div class="box">
+         <img src="images/R3.jpg" alt="">
+         <h3>Mr.Sumith</h3>
+        
+      </div>
+
+   </div>
+
+</section>
+
+
+
+
+
+
+<!-- our staff ends -->
+	
+</section>
+
+<!-- faq section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <i class="fas fa-phone"></i>
+         <h3>phone number</h3>
+         <p>077-2525252</p>
+         <p>075-3000300</p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-map-marker-alt"></i>
+         <h3>our address</h3>
+         <p>Mihinthale, Sri Lanka</p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-clock"></i>
+         <h3>opening hours</h3>
+         <p>8:00am to 9:30pm</p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-envelope"></i>
+         <h3>email address</h3>
+         <p>fasetfooddelivery@gmail.com</p>
+         <p>fastfood@gmail.com</p>
+      </div>
+
+   </div>
+
+   <div class="credit">
+      &copy; copyright @ 2023 by <span>TEAN WOLF</span> | all rights reserved!
+   </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
